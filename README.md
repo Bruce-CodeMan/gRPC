@@ -21,6 +21,12 @@
     - Both client and server can send data streams to each other
     - 案例: 聊天机器人
 
-
+## metadata
+```text
+gRPC 让我们可以像本地调用一样实现远程调用，对于每一次的RPC调用，都可能会有一些有用的数据，而这些数据就可以通过metadata来传递
+metadata是以key-value的形式存储数据的，其中key是string类型，而value是[]string，就是一个字符串数组类型
+metadata使得client 和server能够为对方提供关于本次调用的一些信息，就像一次http请求的RequestHeader和ResponseHeader一样
+http中header的生命周期是一次http请求，那么metadata的生命周期就是一次rpc调用
+```
 
 
