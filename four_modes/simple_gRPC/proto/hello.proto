@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "./proto3";   // Mac: option go_package = ".;proto3";
+
+service Greet{
+  rpc SayHello(HelloRequest) returns (HelloReply);
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}
+
+// Terminal : 1. protoc --go_out=. ./hello.proto
+//            2. protoc --go-grpc_out=. ./hello.proto
