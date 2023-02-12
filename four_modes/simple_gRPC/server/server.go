@@ -8,8 +8,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"google.golang.org/grpc"
 	"net"
+
+	"google.golang.org/grpc"
 
 	"gRPC/four_modes/simple_gRPC/proto/proto3"
 )
