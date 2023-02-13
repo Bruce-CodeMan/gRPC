@@ -31,6 +31,7 @@ http中header的生命周期是一次http请求，那么metadata的生命周期�
 
 ## interceptor
 ```text
-
+可以对RPC的请求和响应进行拦截处理，既可以在客户端拦截，也可以在服务端拦截
 ```
 
+<img src="./images/interceptor.png">
