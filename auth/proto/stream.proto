@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = ".;proto3";
+
+service Greeter {
+  rpc Simple(StreamRequestData) returns (StreamResponseData);
+}
+
+message StreamRequestData {
+  string data = 1;
+}
+
+message StreamResponseData {
+  string message = 1;
+}
